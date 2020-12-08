@@ -36,7 +36,7 @@ void Drawable::Draw(SDL_Renderer* rend, std::vector<IDrawable*>& others, SDL_Poi
 	if(distanceToCoursor <= CoursorDistance)
 	{
 		int alpha = (255 - (255 * (distanceToCoursor / CoursorDistance)));
-		lineRGBA(rend, m_center.x, m_center.y, coursor.x, coursor.y, 255, 255, 255, alpha);
+		lineRGBA(rend, m_center.x, m_center.y, coursor.x, coursor.y, Cursor_lineR, Cursor_lineG, Cursor_lineB, alpha);
 	}
 
 	if(CHANGE_SIZE_OF_DOTS)
